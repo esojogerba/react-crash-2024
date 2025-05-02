@@ -26,7 +26,7 @@ const JobListing = ({ job }) => {
                         setShowFullDescription((prevState) => !prevState)
                     }
                     className="text-indigo-500 mb-5"
-                    hover:text-indigo-600
+                    hover:text-indigo-600="true"
                 >
                     {showFullDescription ? "Less" : "More"}
                 </button>
