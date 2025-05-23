@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
-export default defineConfig({
-    base: "/react-crash-2024/",
+export default defineConfig(({ command }) => ({
+    base: command === "build" ? "/react-crash-2024/" : "/",
     plugins: [react(), tailwindcss()],
     server: {
         port: 3000,
@@ -16,4 +16,4 @@ export default defineConfig({
             },
         },
     },
-});
+}));
