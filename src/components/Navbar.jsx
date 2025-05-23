@@ -16,7 +16,7 @@ const Navbar = () => {
                         {/* <!-- Logo --> */}
                         <NavLink
                             className="flex flex-shrink-0 items-center mr-4"
-                            to="/"
+                            to=""
                         >
                             <img
                                 className="h-10 w-auto"
@@ -29,13 +29,13 @@ const Navbar = () => {
                         </NavLink>
                         <div className="md:ml-auto">
                             <div className="flex space-x-2">
-                                <NavLink to="/" className={linkClass}>
+                                <NavLink to="" className={linkClass}>
                                     Home
                                 </NavLink>
-                                <NavLink to="/jobs" className={linkClass}>
+                                <NavLink to="jobs" className={linkClass}>
                                     Jobs
                                 </NavLink>
-                                <NavLink to="/add-job" className={linkClass}>
+                                <NavLink to="add-job" className={linkClass}>
                                     Add Job
                                 </NavLink>
                             </div>
